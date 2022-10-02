@@ -2,7 +2,17 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import { createGlobalStyle } from "styled-components";
-import Templete from "./components/Templete";
+import TodoTemplate from "./components/Templete";
+import Rating from "./components/Star";
+import ColorSchemesExample from "./components/Nav/index";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+
+import Explain from "./pages/Explain";
+
+import Rank from "./pages/Rank";
+import Login from "./pages/Login";
+import Signin from "./pages/Signin";
+
 const GlobalStyle = createGlobalStyle`
   body {
     background: #e9ecef;
@@ -12,15 +22,19 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
-      <Templete>
-        Logo
-        <div>
-          <input></input>
-          <button>🔍</button>
-        </div>
-      </Templete>
-      <div></div>
+      {/* <ColorSchemesExample></ColorSchemesExample> */}
+
+      <BrowserRouter>
+        <GlobalStyle />
+        <TodoTemplate>
+          <Routes>
+            <Route path="/" element={<Explain />}></Route>
+            <Route path="/Rank" element={<Rank />}></Route>
+            <Route path="/Login" element={<Login />}></Route>
+            <Route path="/Signin" element={<Signin />}></Route>
+          </Routes>
+        </TodoTemplate>
+      </BrowserRouter>
     </div>
   );
 }
