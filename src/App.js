@@ -1,14 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-
 import { createGlobalStyle } from "styled-components";
 import TodoTemplate from "./components/Templete";
 import Rating from "./components/Star";
 import ColorSchemesExample from "./components/Nav/index";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
-
 import Explain from "./pages/Explain";
-
 import Rank from "./pages/Rank";
 import Login from "./pages/Login";
 import Signin from "./pages/Signin";

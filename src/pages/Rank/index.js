@@ -6,7 +6,7 @@ function Rank() {
   return (
     <>
       <div>
-        <p> Ranking</p>
+        <p> Ranking </p>
         <div>
           <Rating></Rating>
           <Rating></Rating>

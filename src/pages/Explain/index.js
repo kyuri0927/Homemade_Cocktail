@@ -24,7 +24,7 @@ function Explain() {
         <Styled.RatingText>선호도를 입력해주세요.</Styled.RatingText>
 
         {/* 별점 컴포넌트 */}
-        <Rating></Rating>
+        {/* <Rating></Rating> */}
         {/* 별점 컴포넌트 */}
 
         <Styled.FontWraper>

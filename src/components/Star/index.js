@@ -32,7 +32,6 @@ function Rating() {
     //   }),
     // });
   };
-
   return (
     <>
       <Styled.Wrap>
