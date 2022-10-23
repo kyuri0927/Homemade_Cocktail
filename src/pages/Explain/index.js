@@ -3,7 +3,7 @@ import * as Styled from "./styled";
 import ColorSchemesExample from "../../components/Nav";
 import Rating from "../../components/Star";
 import TodoTemplate from "../../components/Templete";
-
+import { Modal } from "../../features/Modal";
 function Explain() {
   return (
     <div>
@@ -24,7 +24,7 @@ function Explain() {
         <Styled.RatingText>선호도를 입력해주세요.</Styled.RatingText>
 
         {/* 별점 컴포넌트 */}
-        {/* <Rating></Rating> */}
+        <Rating></Rating>
         {/* 별점 컴포넌트 */}
 
         <Styled.FontWraper>
@@ -54,7 +54,7 @@ function Explain() {
             <p>후기</p>
           </Styled.FontWraper2>
 
-          <Styled.Box>매우 맛있습니다!</Styled.Box>
+          <Styled.Box></Styled.Box>
         </div>
         <Styled.StyledButton>후기 등록</Styled.StyledButton>
 
