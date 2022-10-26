@@ -14,15 +14,16 @@ export const modal = styled.div`
 `;
 
 export const modalBody = styled.div`
-  position: absolute;
-  width: 300px;
-  height: 500px;
+  position: relative;
+  width: 500px;
+  height: 300px;
   padding: 40px;
   text-align: center;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
 `;
+
 export const modalclose = styled.div`
   position: absolute;
   top: 15px;
@@ -34,4 +35,24 @@ export const modalclose = styled.div`
   :hover {
     cursor: pointer;
   }
+`;
+
+// 후기 입력 input
+export const review = styled.input`
+  display: absolute;
+
+  width: 444px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+  background-color: #e9ecef;
+  border: 1px solid black;
+  border-radius: 10px;
+`;
+
+export const Wraper = styled.div`
+  font-weight: bold;
+  font-size: 30px;
 `;

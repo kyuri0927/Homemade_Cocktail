@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const RatingText = styled.div`
+  // 주황글씨
   color: #787878;
   font-size: 18px;
   font-weight: 400;
@@ -8,6 +9,7 @@ export const RatingText = styled.div`
 `;
 
 export const Box = styled.div`
+  //레시피랑 후기 박스
   display: relative;
   width: 444px;
   height: 120px;
@@ -19,6 +21,7 @@ export const Box = styled.div`
 `;
 
 export const FontWraper = styled.div`
+  //술이름 wrapper
   margin-top: 15px;
   font-size: 25px;
   font-weight: bold;
@@ -26,6 +29,7 @@ export const FontWraper = styled.div`
 `;
 
 export const FontWraper2 = styled.div`
+  // 준비물 후기 wrapper
   font-size: 18px;
   font-weight: bold;
   color: black;
@@ -52,6 +56,7 @@ export const Button = styled.div`
 `;
 
 export const StyledButton = styled.button`
+  //후기 등록 버튼
   margin: 0;
   border: none;
   cursor: pointer;

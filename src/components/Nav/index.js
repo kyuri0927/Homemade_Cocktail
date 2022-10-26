@@ -13,6 +13,7 @@ function ColorSchemesExample() {
             <Nav.Link href="/Rank">랭킹</Nav.Link>
             <Nav.Link href="/Signin">회원가입</Nav.Link>
             <Nav.Link href="/Login">로그인</Nav.Link>
+            <Nav.Link href="/">explain</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

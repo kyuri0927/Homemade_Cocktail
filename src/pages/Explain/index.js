@@ -4,7 +4,10 @@ import ColorSchemesExample from "../../components/Nav";
 import Rating from "../../components/Star";
 import TodoTemplate from "../../components/Templete";
 import { Modal } from "../../features/Modal";
+import { useState } from "react";
 function Explain() {
+  const [signup, setSignup] = useState(false);
+
   return (
     <div>
       <TodoTemplate>
@@ -42,7 +45,6 @@ function Explain() {
           <Styled.FontWraper2>
             <p> 레시피</p>
           </Styled.FontWraper2>
-
           <Styled.Box>
             잔에 얼음을 채운다.
             <br /> 잔에 오렌지 슬라이스를 제외한 나머지 재료를 넣는다.
@@ -56,7 +58,23 @@ function Explain() {
 
           <Styled.Box></Styled.Box>
         </div>
-        <Styled.StyledButton>후기 등록</Styled.StyledButton>
+
+        {/* 후기 등록  */}
+
+        <div className="Main">
+          {/* // 후기등록 버튼을 누르면 후기등록 modal이 생성된다 */}
+          <input
+            type="button"
+            value="후기등록"
+            className="blueBtn"
+            onClick={() => setSignup(!signup)}
+          />
+          {signup && (
+            <Modal closeModal={() => setSignup(!signup)}>
+              {/* <Signup /> */}
+            </Modal>
+          )}
+        </div>
 
         {/* 준비물과 레시피 및 후기 등록 */}
       </TodoTemplate>
