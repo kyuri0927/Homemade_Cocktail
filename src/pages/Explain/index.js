@@ -5,6 +5,7 @@ import Rating from "../../components/Star";
 import TodoTemplate from "../../components/Templete";
 import { Modal } from "../../features/Modal";
 import { useState } from "react";
+import BackButton from "../../components/BackButton";
 function Explain() {
   const [signup, setSignup] = useState(false);
 
@@ -12,6 +13,7 @@ function Explain() {
     <div>
       <TodoTemplate>
         <ColorSchemesExample></ColorSchemesExample>
+        <BackButton></BackButton>
         {/* 사진  */}
         <div className="Card1">
           <div className="c1image">
