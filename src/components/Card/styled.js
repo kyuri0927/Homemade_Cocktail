@@ -11,3 +11,9 @@ export const Box = styled.div`
   border: 1px solid black;
   border-radius: 10px;
 `;
+
+export const imgBox = styled.image`
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+`;
