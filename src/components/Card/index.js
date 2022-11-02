@@ -6,6 +6,7 @@ import img2 from "../../image/cocktail2.png";
 import img3 from "../../image/cocktail3.png";
 import img5 from "../../image/cocktail5.png";
 import img6 from "../../image/cocktail6.png";
+import Cocktail from "../Cocktail";
 
 function Card() {
   //   const card = Data.map((a, i) => {
