@@ -16,4 +16,12 @@ export const imgBox = styled.image`
   width: 10px;
   height: 10px;
   object-fit: cover;
+  vertical-align: middle;
+`;
+
+export const FontWrapper = styled.div`
+  display: relative;
+  margin-top: 50px;
+  /* justify-content: center; //가로가운데
+  align-items: center; //세로가운데 */
 `;

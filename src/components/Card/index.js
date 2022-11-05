@@ -27,15 +27,17 @@ function Card() {
                 style={{
                   width: "130px",
                   height: " 130px",
-                  display: "flex",
+                  display: "relaitve",
                   marginTop: "15px",
                   marginLeft: "10px",
                   margin: "inline",
+                  float: "left",
                 }}
               />
-
-              <p>술이름</p>
-              <p>평점</p>
+              <Styled.FontWrapper>
+                <p>술이름</p>
+                <p>평점</p>
+              </Styled.FontWrapper>
             </Styled.Box>
           </div>
         );

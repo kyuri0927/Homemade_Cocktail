@@ -28,12 +28,14 @@ function Rank() {
                   style={{
                     width: "130px",
                     height: " 130px",
-                    display: "flex",
+                    display: "relaitve",
                     marginTop: "15px",
                     marginLeft: "10px",
                     margin: "inline",
+                    float: "left",
                   }}
                 />
+
                 <Rating></Rating>
               </Styled.Box>
             </div>
