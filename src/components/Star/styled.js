@@ -8,7 +8,7 @@ export const Wrap = styled.div`
 
 export const Stars = styled.div`
   display: flex;
-  padding-top: 5px;
+  padding-bottom: 5px;
 
   position: relative;
 

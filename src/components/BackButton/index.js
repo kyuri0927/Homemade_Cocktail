@@ -4,7 +4,7 @@ import * as Styled from "./styled";
 function BackButton() {
   return (
     <>
-      <Styled.Backbutton to="/Home">◀️</Styled.Backbutton>
+      <Styled.Backbutton to="/">◀️</Styled.Backbutton>
     </>
   );
 }

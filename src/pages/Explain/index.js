@@ -6,9 +6,13 @@ import TodoTemplate from "../../components/Templete";
 import { Modal } from "../../features/Modal";
 import { useState } from "react";
 import BackButton from "../../components/BackButton";
-function Explain() {
-  const [signup, setSignup] = useState(false);
+import img_array from "../../components/Data";
+import { useParams } from "react-router-dom";
 
+function Explain(props) {
+  const [signup, setSignup] = useState(false);
+  let { id } = useParams();
+  console.log(id);
   return (
     <div>
       <TodoTemplate>
@@ -20,44 +24,35 @@ function Explain() {
             <img
               className="phoneImage"
               alt="iPhone_01"
-              src="img/cocktail1.png"
+              src={img_array[id].image}
             />
           </div>
         </div>
         {/* 사진 */}
 
-        <Styled.RatingText>선호도를 입력해주세요.</Styled.RatingText>
-
         {/* 별점 컴포넌트 */}
         <Rating></Rating>
         {/* 별점 컴포넌트 */}
-
+        <Styled.RatingText>선호도를 입력해주세요.</Styled.RatingText>
         <Styled.FontWraper>
-          <p> 아페롤 스프리츠(Aperol spritz)</p>
+          <p> {img_array[id].name}</p>
         </Styled.FontWraper>
         <Styled.FontWraper2>
-          <p> 😃 도수 : 16</p>
+          <p> 😃 도수 : {img_array[id].alchol}</p>
         </Styled.FontWraper2>
 
         {/* 준비물과 레시피 및 후기 등록 */}
         <div>
+          <Styled.FontWraper2>재료</Styled.FontWraper2>
+          <Styled.ingredient>{img_array[id].ingredient}</Styled.ingredient>
+
           <Styled.FontWraper2>
-            <p>준비물</p>
+            <p>레시피</p>
           </Styled.FontWraper2>
-          <Styled.FontWraper2>
-            <p> 레시피</p>
-          </Styled.FontWraper2>
-          <Styled.Box>
-            잔에 얼음을 채운다.
-            <br /> 잔에 오렌지 슬라이스를 제외한 나머지 재료를 넣는다.
-            <br /> 바 스푼으로 젓는다.
-            <br />
-            오렌지 슬라이스를 넣는다.
-          </Styled.Box>
+          <Styled.Box>{img_array[id].recipe}</Styled.Box>
           <Styled.FontWraper2>
             <p>후기</p>
           </Styled.FontWraper2>
-
           <Styled.Box></Styled.Box>
         </div>
 

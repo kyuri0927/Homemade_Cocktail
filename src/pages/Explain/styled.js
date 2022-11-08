@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RatingText = styled.div`
   // 주황글씨
   color: #787878;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #e2703a;
 `;
@@ -23,7 +23,7 @@ export const Box = styled.div`
 export const FontWraper = styled.div`
   //술이름 wrapper
   margin-top: 15px;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
   color: black solid black;
 `;
@@ -84,3 +84,17 @@ export const StyledButton = styled.button`
   }
 `;
 export const Img = styled.div``;
+
+export const ingredient = styled.div`
+  //레시피랑 후기 박스
+  display: relative;
+  width: 244px;
+  height: 80px;
+  margin: auto;
+  font-weight: normal;
+  text-align: center;
+
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+`;

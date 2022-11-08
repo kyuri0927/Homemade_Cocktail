@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Box = styled.div`
   //칵테일 나열 박스
@@ -21,7 +22,9 @@ export const imgBox = styled.image`
 
 export const FontWrapper = styled.div`
   display: relative;
-  margin-top: 50px;
+  margin-top: 30px;
   /* justify-content: center; //가로가운데
   align-items: center; //세로가운데 */
 `;
+
+export const link = styled(Link)``;
