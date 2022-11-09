@@ -1,10 +1,10 @@
 import React from "react";
 import * as Styled from "./styled";
 import Rating from "../../components/Star";
-import Card from "../../components/Card";
 import ColorSchemesExample from "../../components/Nav";
-import Cocktail from "../../components/Cocktail";
+import ColorSchemesExample2 from "../../components/Nav2";
 
+import { useState } from "react";
 import img1 from "../../image/cocktail1.png";
 import img2 from "../../image/cocktail2.png";
 import img3 from "../../image/cocktail3.png";
@@ -13,12 +13,14 @@ import img6 from "../../image/cocktail6.png";
 
 function Rank() {
   const image_array = [img1, img2, img3, img5, img6];
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
       <div>
         <p> Ranking </p>
-        <ColorSchemesExample></ColorSchemesExample>
+        {/* 로그인 되어있으면 내정보nav가 뜨고 아니면 로그인 회원가입nav가 뜸 */}
+        {isLoggedIn ? <ColorSchemesExample2 /> : <ColorSchemesExample />}
+
         {[1, 2, 3, 4, 5].map(function (a, i) {
           return (
             <div>

@@ -8,15 +8,18 @@ import { useState } from "react";
 import BackButton from "../../components/BackButton";
 import img_array from "../../components/Data";
 import { useParams } from "react-router-dom";
+import ColorSchemesExample2 from "../../components/Nav2";
 
 function Explain(props) {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [signup, setSignup] = useState(false);
   let { id } = useParams();
   console.log(id);
   return (
     <div>
       <TodoTemplate>
-        <ColorSchemesExample></ColorSchemesExample>
+        {isLoggedIn ? <ColorSchemesExample2 /> : <ColorSchemesExample />}
+
         <BackButton></BackButton>
         {/* 사진  */}
         <div className="Card1">
