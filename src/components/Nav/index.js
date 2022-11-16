@@ -14,6 +14,7 @@ function ColorSchemesExample() {
             <Nav.Link href="/Signin">회원가입</Nav.Link>
             <Nav.Link href="/Login">로그인</Nav.Link>
             <Nav.Link href="/">explain</Nav.Link>
+            <Nav.Link href="/">내 정보</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -10,6 +10,7 @@ import Rank from "./pages/Rank";
 import Login from "./pages/Login";
 import Signin from "./pages/Signin";
 import Home from "./pages/Home";
+import MyPage from "./pages/MyPage";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/Login" element={<Login />}></Route>
             <Route path="/Signin" element={<Signin />}></Route>
             <Route path="/Home" element={<Home />}></Route>
+            <Route path="/MyPage" element={<MyPage />}></Route>
           </Routes>
         </TodoTemplate>
       </BrowserRouter>

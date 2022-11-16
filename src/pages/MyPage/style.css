@@ -1,0 +1,15 @@
+.pen{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.nickname{
+    font-size: 20px;
+    text-align: left;
+}
+
+.intro{
+    font-size: 20px;
+    text-align: left;
+}
